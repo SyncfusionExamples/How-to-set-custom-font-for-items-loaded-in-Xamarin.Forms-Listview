@@ -40,11 +40,8 @@ This example demonstrates how to set custom font for items loaded in Xamarin.For
                                 <RowDefinition Height="1" />
                             </Grid.RowDefinitions>
                             <Grid RowSpacing="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="70" />
-                                </Grid.ColumnDefinitions>
+                            . . .
+                            . . .
 
                                 <Grid>
                                     <Image Source="{Binding ContactImage}"
