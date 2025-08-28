@@ -60,7 +60,7 @@ This example demonstrates how to set custom font for items loaded in Xamarin.For
     </syncfusion:SfListView>
 </Grid>
 
-ViewModel.cs
+ViewModel.cs:
 public ObservableCollection<GroupResult> ContactsGrouped { get; set; }
 
 public ContactsViewModel()
