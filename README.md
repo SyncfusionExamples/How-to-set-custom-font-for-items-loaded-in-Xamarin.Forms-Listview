@@ -56,28 +56,6 @@ This example demonstrates how to set custom font for items loaded in Xamarin.For
         </syncfusion:SfListView.ItemTemplate>
     </syncfusion:SfListView>
 </Grid>
-
-ViewModel.cs:
-public ObservableCollection<GroupResult> ContactsGrouped { get; set; }
-
-public ContactsViewModel()
-{
-    var contactsInfo = new ObservableCollection<Contacts>();
-    Random r = new Random();
-
-    foreach (var cusName in CustomerNames)
-    {
-        var contact = new Contacts(cusName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
-        contact.ContactColor = Color.FromRgb(r.Next(40, 255), r.Next(40, 255), r.NextInfo.Add(contact));
-    }
-
-    var groupedContacts = contactsInfo
-        .GroupBy(c => c.ContactName[0].ToString())
-        .Select(g => new GroupResult(g.Key, g.ToList()))
-        .ToList();
-
-    ContactsGrouped = new ObservableCollection<GroupResult>(groupedContacts);
-}
 ```
 
 See [How-to-set-custom-font-for-items-loaded-in-Xamarin.Forms-Listview?](https://www.syncfusion.com/kb/9733/how-to-set-custom-font-for-items-loaded-in-xamarin-forms-listview) for more details
